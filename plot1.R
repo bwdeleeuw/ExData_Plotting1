@@ -23,7 +23,7 @@ png(filename="plot1.png",
     height=480,
     bg="transparent")
 
-#create the histogram in red
+#create the histogram in red, and set appropriate labels
 hist(filteredData$Global_active_power,
      col="red",
      main="Global Active Power",
