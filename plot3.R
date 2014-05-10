@@ -11,11 +11,7 @@ data$DateTime = strptime(paste(data$Date,data$Time),
                          "%d/%m/%Y %H:%M:%S")
 data <- data[,-c(1,2)]
 
-<<<<<<< HEAD
 # filter for dates of 2007-02-01 and 2007-02-02
-=======
-#filter for dates 
->>>>>>> c716a5645717bca07bbd4fd2514b278a0f71013d
 filteredData <- subset(data, 
                        DateTime >= as.POSIXct('2007-02-01') & 
                          DateTime < as.POSIXct('2007-02-03'))
